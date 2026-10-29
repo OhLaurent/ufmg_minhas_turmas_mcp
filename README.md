@@ -35,10 +35,10 @@ cp .env.example .env   # preencha UFMG_USER (login minhaUFMG, minúsculo) e UFMG
 uv run python scripts/login_check.py   # deve listar suas turmas e prazos
 ```
 
-Para registrar no Claude Code (as credenciais são lidas do `.env` do projeto):
+Para registrar no Claude Code, troque `<CAMINHO_DO_REPO>` pelo caminho absoluto desta pasta (as credenciais são lidas do `.env` do projeto):
 
 ```sh
-claude mcp add ufmg-turmas --scope user -- uv --directory C:/caminho/para/ufmg_minhas_turmas_mcp run ufmg-mcp
+claude mcp add ufmg-turmas --scope user -- uv --directory <CAMINHO_DO_REPO> run ufmg-mcp
 ```
 
 No Claude Desktop, use o mesmo comando em `claude_desktop_config.json`:
